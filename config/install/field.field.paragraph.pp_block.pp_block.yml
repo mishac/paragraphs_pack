@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.pp_block
+    - paragraphs.paragraphs_type.pp_block
+id: paragraph.pp_block.pp_block
+field_name: pp_block
+entity_type: paragraph
+bundle: pp_block
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: true
+field_type: entity_reference

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.pp_view
+    - paragraphs.paragraphs_type.pp_view
+  module:
+    - viewsreference
+id: paragraph.pp_view.pp_view
+field_name: pp_view
+entity_type: paragraph
+bundle: pp_view
+label: View
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings: {  }
+  plugin_types:
+    block: block
+field_type: viewsreference

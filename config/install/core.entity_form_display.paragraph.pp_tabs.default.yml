@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_tabs.pp_tab_section
+    - paragraphs.paragraphs_type.pp_tabs
+  module:
+    - paragraphs
+id: paragraph.pp_tabs.default
+targetEntityType: paragraph
+bundle: pp_tabs
+mode: default
+content:
+  pp_tab_section:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

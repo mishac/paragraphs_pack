@@ -1,0 +1,68 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.pp_tab_section
+    - paragraphs.paragraphs_type.pp_tab_section
+    - paragraphs.paragraphs_type.pp_tabs
+  module:
+    - entity_reference_revisions
+id: paragraph.pp_tabs.pp_tab_section
+field_name: pp_tab_section
+entity_type: paragraph
+bundle: pp_tabs
+label: Tab
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pp_tab_section: pp_tab_section
+    target_bundles_drag_drop:
+      pp_tab_section:
+        enabled: true
+        weight: 16
+      pp_accordion:
+        weight: 17
+        enabled: false
+      pp_accordion_section:
+        weight: 18
+        enabled: false
+      pp_blank:
+        weight: 19
+        enabled: false
+      pp_block:
+        weight: 20
+        enabled: false
+      pp_carousel:
+        weight: 21
+        enabled: false
+      pp_column:
+        weight: 22
+        enabled: false
+      pp_column_three_uneven:
+        weight: 23
+        enabled: false
+      pp_column_two_uneven:
+        weight: 24
+        enabled: false
+      pp_image:
+        weight: 25
+        enabled: false
+      pp_modal:
+        weight: 26
+        enabled: false
+      pp_text:
+        weight: 27
+        enabled: false
+      pp_tabs:
+        weight: 28
+        enabled: false
+      pp_view:
+        weight: 29
+        enabled: false
+field_type: entity_reference_revisions

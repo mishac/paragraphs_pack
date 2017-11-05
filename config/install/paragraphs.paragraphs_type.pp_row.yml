@@ -1,0 +1,11 @@
+uuid: b9dbaaf8-156a-4727-86c0-6278e3256b82
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 06krTnBlpFx8smy0WuhcLOfMD4j6bmc6OigX_dcqamA
+id: pp_row
+label: Row
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

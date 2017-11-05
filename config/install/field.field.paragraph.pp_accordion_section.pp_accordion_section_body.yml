@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.pp_accordion_section_body
+    - paragraphs.paragraphs_type.pp_accordion_section
+    - paragraphs.paragraphs_type.pp_block
+    - paragraphs.paragraphs_type.pp_column
+    - paragraphs.paragraphs_type.pp_image
+    - paragraphs.paragraphs_type.pp_text
+    - paragraphs.paragraphs_type.pp_view
+  module:
+    - entity_reference_revisions
+id: paragraph.pp_accordion_section.pp_accordion_section_body
+field_name: pp_accordion_section_body
+entity_type: paragraph
+bundle: pp_accordion_section
+label: 'Accordion Section Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      pp_text: pp_text
+      pp_image: pp_image
+      pp_column: pp_column
+      pp_block: pp_block
+      pp_view: pp_view
+    target_bundles_drag_drop:
+      pp_text:
+        enabled: true
+        weight: -31
+      pp_image:
+        enabled: true
+        weight: -30
+      pp_blank:
+        enabled: true
+        weight: -29
+      pp_column:
+        enabled: true
+        weight: -28
+      pp_block:
+        enabled: true
+        weight: -25
+      pp_view:
+        enabled: true
+        weight: -23
+      pp_accordion:
+        weight: -22
+        enabled: false
+      pp_accordion_section:
+        weight: -21
+        enabled: false
+      pp_carousel:
+        weight: -20
+        enabled: false
+      pp_tabs:
+        weight: -19
+        enabled: false
+      pp_tab_section:
+        weight: -18
+        enabled: false
+field_type: entity_reference_revisions

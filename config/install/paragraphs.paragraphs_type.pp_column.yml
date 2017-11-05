@@ -1,0 +1,11 @@
+uuid: f0505bfe-f0f2-4788-a059-9fdee0d150bf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OZRiX4Y43NXLMfeyp9bVQRanq6xhzQt_kNzknaBwj98
+id: pp_column
+label: Column
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

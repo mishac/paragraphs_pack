@@ -1,0 +1,19 @@
+name: Paragraphs Pack
+type: module
+description: Paragraphs Pack
+core: 8.x
+package: Paragraphs
+dependencies:
+  - paragraphs
+  - entity_reference_revisions
+  - field
+  - file
+  - filter
+  - image
+  - link
+  - options
+  - system
+  - text
+  - user
+  - views
+  - viewsreference

@@ -1,0 +1,38 @@
+uuid: 4d5c8d0f-da9a-4387-9c85-eb181767241d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_column.pp_column_content
+    - paragraphs.paragraphs_type.pp_column
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: 6SIhQ7PNaWU1rC6Rqtr8Ox7ZjE4OAWSH43C9_mjr3G4
+id: paragraph.pp_column.default
+targetEntityType: paragraph
+bundle: pp_column
+mode: default
+content:
+  pp_column_content:
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

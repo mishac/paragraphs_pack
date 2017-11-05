@@ -1,0 +1,4 @@
+.paragraph--type--pp-column .field--name-field-pp-column-content {
+  display: flex;
+  flex-direction: column;
+}

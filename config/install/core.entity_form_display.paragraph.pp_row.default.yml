@@ -1,0 +1,38 @@
+uuid: 36a2f16d-f910-46f3-82a5-bebcf2c39322
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_row.field_pp_row_content
+    - paragraphs.paragraphs_type.pp_row
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+_core:
+  default_config_hash: mNPt3qfFDvkpq6iM1OUQK8T440H6qSWp-tZIMIjtvCI
+id: paragraph.pp_row.default
+targetEntityType: paragraph
+bundle: pp_row
+mode: default
+content:
+  field_pp_row_content:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

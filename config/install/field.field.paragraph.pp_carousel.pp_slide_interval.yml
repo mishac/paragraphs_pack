@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.pp_slide_interval
+    - paragraphs.paragraphs_type.pp_carousel
+  module:
+    - options
+id: paragraph.pp_carousel.pp_slide_interval
+field_name: pp_slide_interval
+entity_type: paragraph
+bundle: pp_carousel
+label: 'Slide Interval'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'false'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

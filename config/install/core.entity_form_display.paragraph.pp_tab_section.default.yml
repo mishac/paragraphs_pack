@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_tab_section.pp_tab_section_body
+    - field.field.paragraph.pp_tab_section.pp_tab_section_title
+    - paragraphs.paragraphs_type.pp_tab_section
+  module:
+    - paragraphs
+id: paragraph.pp_tab_section.default
+targetEntityType: paragraph
+bundle: pp_tab_section
+mode: default
+content:
+  pp_tab_section_body:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+  pp_tab_section_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,26 @@
+uuid: 1341c6c0-029a-4b38-bb4c-47a0c9656f05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_column.pp_column_content
+    - paragraphs.paragraphs_type.pp_column
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: cWKtlgkDWBCbgPudvyY9q6Vp8xS5bFXG2MxOoKrSDlo
+id: paragraph.pp_column.default
+targetEntityType: paragraph
+bundle: pp_column
+mode: default
+content:
+  pp_column_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {  }

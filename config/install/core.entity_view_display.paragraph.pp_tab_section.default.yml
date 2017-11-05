@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_tab_section.pp_tab_section_body
+    - field.field.paragraph.pp_tab_section.pp_tab_section_title
+    - paragraphs.paragraphs_type.pp_tab_section
+  module:
+    - entity_reference_revisions
+id: paragraph.pp_tab_section.default
+targetEntityType: paragraph
+bundle: pp_tab_section
+mode: default
+content:
+  pp_tab_section_body:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  pp_tab_section_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

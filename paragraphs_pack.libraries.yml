@@ -1,0 +1,29 @@
+pp-accordion:
+  js:
+    js/paragraphs-pack-accordion.behaviors.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.ui.accordion
+pp-carousel:
+  css:
+    component:
+      css/paragraphs-pack-carousel.min.css: { }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+pp-column:
+  css:
+    component:
+      css/paragraphs-pack-column.css: { }
+pp-row:
+  css:
+    component:
+      css/paragraphs-pack-row.css: { }
+pp-tabs:
+  js:
+    js/paragraphs-pack-tabs.behaviors.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.ui.tabs

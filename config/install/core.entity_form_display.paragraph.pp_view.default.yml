@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_view.pp_view
+    - paragraphs.paragraphs_type.pp_view
+  module:
+    - viewsreference
+id: paragraph.pp_view.default
+targetEntityType: paragraph
+bundle: pp_view
+mode: default
+content:
+  pp_view:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+hidden:
+  created: true
+  status: true
+  uid: true

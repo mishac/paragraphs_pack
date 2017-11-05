@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains paragraphs_pack.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme().
+ */
+function paragraphs_pack_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__pp_accordion' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__pp_carousel' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__pp_tabs' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__pp_column' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__pp_row' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__pp_image' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}

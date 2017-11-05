@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_carousel.pp_slide_content
+    - field.field.paragraph.pp_carousel.pp_slide_interval
+    - paragraphs.paragraphs_type.pp_carousel
+  module:
+    - paragraphs
+id: paragraph.pp_carousel.default
+targetEntityType: paragraph
+bundle: pp_carousel
+mode: default
+content:
+  pp_slide_content:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+  pp_slide_interval:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+hidden:
+  created: true
+  status: true
+  uid: true

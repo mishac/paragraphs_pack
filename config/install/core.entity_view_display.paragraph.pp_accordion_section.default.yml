@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_accordion_section.pp_accordion_section_body
+    - field.field.paragraph.pp_accordion_section.pp_accordion_section_title
+    - paragraphs.paragraphs_type.pp_accordion_section
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.pp_accordion_section.default
+targetEntityType: paragraph
+bundle: pp_accordion_section
+mode: default
+content:
+  pp_accordion_section_body:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  pp_accordion_section_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true
