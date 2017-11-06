@@ -11,6 +11,9 @@ Default Paragraph types for Drupal 8.  Forked from Bootstrap Paragraphs (https:/
 * Accordion + Accordion Section - display paragraphs as a jQuery UI Accordion
 * Tabs + Tab section - display paragraphs as jQuery UI Tabs
 
+### Provided by submodules
+* pp_webform: a paragraph type that embeds a drupal webform
+
 ### TBD:
 * Carousel - need to decide whether to keep this and choose a specific carousel plugin, or remove it.
-* Webform + Contant - Bootstrap_paragraphs has these, so it shouldn't be difficult to port those over.
+* Contact - Bootstrap_paragraphs has this.

@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pp_webform.pp_webform
+    - paragraphs.paragraphs_type.pp_webform
+  module:
+    - options
+    - webform
+id: paragraph.pp_webform.default
+targetEntityType: paragraph
+bundle: pp_webform
+mode: default
+content:
+  pp_webform:
+    weight: 2
+    label: hidden
+    settings:
+      source_entity: false
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+hidden:
+  created: true
+  uid: true
