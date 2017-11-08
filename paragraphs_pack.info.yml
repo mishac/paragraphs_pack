@@ -7,9 +7,11 @@ dependencies:
   - paragraphs
   - entity_reference_revisions
   - field
+  - field_layout
   - file
   - filter
   - image
+  - layout_discovery
   - link
   - options
   - system
