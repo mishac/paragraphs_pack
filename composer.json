@@ -1,0 +1,17 @@
+{
+  "name": "mishac/paragraphs_pack",
+  "description": "Default paragraph types",
+  "type": "drupal-module",
+  "homepage": "https://github.com/mishac/paragraphs_pack",
+  "authors": [
+    {
+      "name": "Misha Chitharanjan",
+      "email": "mishac@mishac.com",
+      "homepage": "https://mishac.com",
+      "role": "Maintainer"
+    }
+  ],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {}
+}
