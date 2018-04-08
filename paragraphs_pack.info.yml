@@ -4,18 +4,18 @@ description: Paragraphs Pack
 core: 8.x
 package: Paragraphs
 dependencies:
-  - paragraphs
-  - entity_reference_revisions
-  - field
-  - field_layout
-  - file
-  - filter
-  - image
-  - layout_discovery
-  - link
-  - options
-  - system
-  - text
-  - user
-  - views
-  - viewsreference
+  - drupal:paragraphs
+  - drupal:entity_reference_revisions
+  - drupal:field
+  - drupal:field_layout
+  - drupal:file
+  - drupal:filter
+  - drupal:image
+  - drupal:layout_discovery
+  - drupal:link
+  - drupal:options
+  - drupal:system
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - drupal:viewsreference

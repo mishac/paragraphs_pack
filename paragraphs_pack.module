@@ -5,9 +5,6 @@
  * Contains paragraphs_pack.module.
  */
 
-use Drupal\Core\Routing\RouteMatchInterface;
-
-
 /**
  * Implements hook_theme().
  */

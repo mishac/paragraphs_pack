@@ -4,6 +4,6 @@ description: A reusable Webform Paragraph bundle.
 core: 8.x
 package: Paragraphs
 dependencies:
-  - paragraphs
-  - paragraphs_pack
-  - webform
+  - drupal:paragraphs
+  - drupal:paragraphs_pack
+  - drupal:webform

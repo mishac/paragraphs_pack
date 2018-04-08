@@ -1,5 +1,6 @@
 # paragraphs_pack
-Default Paragraph types for Drupal 8.  Forked from Bootstrap Paragraphs (https://www.drupal.org/project/bootstrap_paragraphs), with bootstrap specific code removed, and replaced with jQuery UI where necessary.
+Default Paragraph types for Drupal 8.  Forked from Bootstrap Paragraphs (https://www.drupal.org/project/bootstrap_paragraphs), with bootstrap specific code
+removed, and replaced with jQuery UI where necessary.
 
 ### Currently defined paragraph types:
 
