@@ -39,8 +39,8 @@
 
 {# Renders Slide Interval field. #}
 {# Converts database values to classes supplied by template. #}
-{% if content.bp_slide_interval|render %}
-  {% set slide_interval = content.bp_slide_interval['#items'].getString() %}
+{% if content.pp_slide_interval|render %}
+  {% set slide_interval = content.pp_slide_interval['#items'].getString() %}
   {% set slide_interval_classes = [
     'false' == slide_interval ? 'false',
     '1000' == slide_interval ? '1000',
