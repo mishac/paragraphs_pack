@@ -65,15 +65,12 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ]
 %}
 
-{# Sets Unique ID for Carousel from Paragraph ID. #}
-{% set paragraph_id = 'myCarousel-' ~ paragraph.id.value %}
-
 {# Prints Carousel template. #}
-<div{{ attributes.addClass(classes).setAttribute('id', paragraph_id).setAttribute('data-interval', slide_interval_classes).setAttribute('data-ride', 'carousel') }}>
+<div{{ attributes.addClass(classes).setAttribute('data-interval', slide_interval_classes).setAttribute('data-ride', 'carousel') }}>
   {{ title_suffix }}
   <div class="carousel-inner" role="list">
     {% for key, item in content.pp_slide_content if key|first != '#' %}
-      <div class="paragraph--layout-slideshow__slide-{{ key + 1 }} item carousel-item{% if loop.first %} active{% endif %}" role="listitem">{{ item }}</div>
+      {{ item }}
     {% endfor %}
   </div>
 </div>
